@@ -71,7 +71,7 @@ public class RaiseListenerService extends Service implements SensorEventListener
                     this, REQUEST_WAKE, wakeScreenIntent, 0);
 
             int alarmType = AlarmManager.ELAPSED_REALTIME_WAKEUP;
-            final int HALF_SECOND_MILLIS = 500;
+            final int HALF_SECOND_MILLIS = 100;
 
             AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
